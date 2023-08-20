@@ -1,16 +1,19 @@
 export default function Movie(props) {
-  let { title, description, screenings } = props;
-  let { posterImage } = description;
-  posterImage = 'https://cinema-rest.nodehill.se/' + posterImage;
+  const { title, description, screenings } = props;
+  const { posterImage } = description;
+  const posterImageUrl = 'https://cinema-rest.nodehill.se/' + posterImage;
 
   return (
     <div className="movie">
-      <h2>{title}</h2>
-      <img src={posterImage} alt={title} />
+      <h3>{title}</h3>
+      <img src={posterImageUrl} alt={title} className="movie-poster" />
       {screenings.map(screening => (
-        <div key={screening.screeningId}>
-        </div>
+        <p key={screening.screeningId}>
+          Time: {new Date(screening.screeningTime).toLocaleTimeString('en-US')}
+        </p>
       ))}
     </div>
   );
 }
+
+
