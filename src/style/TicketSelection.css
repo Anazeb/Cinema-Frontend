@@ -1,0 +1,44 @@
+.main-content {
+  margin-bottom: 80px;
+}
+
+.ticket-selection {
+  padding: 16px;
+}
+
+.custom-card {
+  background-color: black !important;
+  color: white !important;
+  margin-bottom: 16px !important;
+  border: 1px solid white !important;
+}
+
+.total-card{
+  background-color: black !important;
+  color: white !important;
+  margin-bottom: 16px !important;
+  border: 1px solid white !important;
+
+}
+
+.custom-card-title {
+  color: white;
+}
+
+.custom-card-text {
+  color: white;
+}
+
+.total-card {
+  margin-top: 20px;
+}
+
+.header {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    font-size: 14px;
+  }
+}
